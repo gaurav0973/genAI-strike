@@ -7,7 +7,8 @@
   "type": "module",
   "main": "index.js",
   "scripts": {
-    "dev": "node --env-file .env index.js"
+    "basic": "node --env-file .env basic.js",
+    "history": "node --env-file .env history.js"
   },
   "dependencies": {
     "@google/genai": "^1.31.0"
