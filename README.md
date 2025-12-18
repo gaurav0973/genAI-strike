@@ -39,10 +39,25 @@
 ## Lecture 03 : Maintaining History in Chatbots
 🌟[X Post](https://x.com/gauravkmaurya09/status/1998224861864867072?s=20)
 
-## Lecture 04 : Introduction to Tools in Generative AI
+- history array to maintain the conversation
+- config
+- systemInstruction
+- readlineSync for taking input from user in terminal
 
+## Lecture 04 : Introduction to Tools in Generative AI
+🌟[X Post](https://x.com/gauravkmaurya09/status/1998806227934860800?s=20)
+
+- what are tools ?
+- why tools are required ?
+- basic flow of tools usage
+    - user prompt
+    - model decide to use tool
+    - tool execution
+    - tool response
+    - model generate final response
 
 ## Lecture 05 : Calling External Tools / APIs in Generative AI
 🌟[X Post](https://x.com/gauravkmaurya09/status/1999114862642049280?s=20)
 - Create function => tools
-- 
+- execute tool based on model's decision
+- maintain history with tool usage
