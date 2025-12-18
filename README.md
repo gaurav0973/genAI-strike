@@ -34,3 +34,15 @@
     - Time is randomly showing in responce when asked for current date and time ?
     - what is readlineSync and why we need it ?
     - how history is maintained in the code ?
+
+
+## Lecture 03 : Maintaining History in Chatbots
+🌟[X Post](https://x.com/gauravkmaurya09/status/1998224861864867072?s=20)
+
+## Lecture 04 : Introduction to Tools in Generative AI
+
+
+## Lecture 05 : Calling External Tools / APIs in Generative AI
+🌟[X Post](https://x.com/gauravkmaurya09/status/1999114862642049280?s=20)
+- Create function => tools
+- 

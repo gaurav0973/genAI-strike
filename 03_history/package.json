@@ -1,0 +1,16 @@
+{
+  "name": "02_basic_setup",
+  "version": "1.0.0",
+  "description": "",
+  "license": "ISC",
+  "author": "",
+  "type": "module",
+  "main": "index.js",
+  "scripts": {
+    "dev": "node  app.js"
+  },
+  "dependencies": {
+    "@google/genai": "^1.31.0",
+    "readline-sync": "^1.4.10"
+  }
+}
