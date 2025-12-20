@@ -1,0 +1,288 @@
+/* CSS Reset */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+    line-height: 1.6;
+    background-color: #f0f2f5; /* Light grey background */
+    color: #34495e; /* Darker text for readability */
+}
+
+header {
+    background: #2c3e50; /* Dark blue-grey header */
+    color: #ecf0f1; /* Light text */
+    padding: 1.5rem 0;
+    text-align: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    font-size: 2.2em;
+    margin-bottom: 5px;
+}
+
+main {
+    padding: 30px 20px;
+    max-width: 960px;
+    margin: 30px auto;
+    background: #ffffff;
+    border-radius: 10px; /* Rounded corners for main container */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08); /* Softer, larger shadow */
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+section {
+    background-color: #fdfdfd;
+    padding: 25px;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+h2 {
+    color: #2c3e50;
+    margin-bottom: 20px;
+    border-bottom: 2px solid #3498db; /* Accent color for headings */
+    padding-bottom: 10px;
+    font-size: 1.8em;
+}
+
+.book-form form {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 15px;
+}
+
+.book-form label {
+    font-weight: 600;
+    margin-bottom: 5px;
+    display: block;
+    color: #34495e;
+}
+
+.book-form input[type="text"] {
+    width: 100%;
+    padding: 12px 15px;
+    border: 1px solid #c8d6e5; /* Lighter border */
+    border-radius: 5px;
+    font-size: 1em;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.book-form input[type="text"]:focus {
+    border-color: #3498db; /* Accent color on focus */
+    box-shadow: 0 0 0 3px rgba(52, 152, 219, 0.2); /* Soft focus glow */
+    outline: none;
+}
+
+.book-form button[type="submit"] {
+    background: #2ecc71; /* Green submit button */
+    color: #fff;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1.1em;
+    font-weight: 600;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    margin-top: 10px;
+}
+
+.book-form button[type="submit"]:hover {
+    background: #27ae60; /* Darker green on hover */
+    transform: translateY(-2px); /* Subtle lift effect */
+}
+
+.book-list table {
+    width: 100%;
+    border-collapse: separate; /* Use separate for rounded corners on cells */
+    border-spacing: 0;
+    margin-top: 15px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    overflow: hidden; /* Ensures rounded corners apply to content */
+}
+
+.book-list th,
+.book-list td {
+    border: 1px solid #e0e6ed; /* Lighter table borders */
+    padding: 12px 15px;
+    text-align: left;
+}
+
+.book-list th {
+    background-color: #f8f9fa; /* Lighter header background */
+    color: #555;
+    font-weight: 600;
+    text-transform: uppercase;
+    font-size: 0.9em;
+}
+
+.book-list tbody tr:nth-child(even) {
+    background-color: #fdfdfd;
+}
+
+.book-list tbody tr:hover {
+    background-color: #eef2f7; /* Subtle row hover effect */
+    cursor: pointer;
+}
+
+.book-list .actions button {
+    padding: 8px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 0.9em;
+    font-weight: 500;
+    margin-right: 8px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.book-list .actions button.edit {
+    background: #3498db; /* Blue for edit */
+    color: #fff;
+}
+
+.book-list .actions button.edit:hover {
+    background: #2980b9;
+    transform: translateY(-1px);
+}
+
+.book-list .actions button.delete {
+    background: #e74c3c; /* Red for delete */
+    color: #fff;
+}
+
+.book-list .actions button.delete:hover {
+    background: #c0392b;
+    transform: translateY(-1px);
+}
+
+footer {
+    text-align: center;
+    padding: 25px;
+    background: #2c3e50; /* Dark blue-grey footer */
+    color: #ecf0f1;
+    margin-top: 30px;
+    box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    main {
+        margin: 20px auto;
+        padding: 20px;
+    }
+
+    h1 {
+        font-size: 1.8em;
+    }
+
+    h2 {
+        font-size: 1.5em;
+    }
+
+    .book-list th,
+    .book-list td {
+        padding: 10px;
+    }
+
+    .book-list .actions button {
+        padding: 6px 10px;
+        font-size: 0.8em;
+    }
+
+    .book-form button[type="submit"] {
+        padding: 10px 15px;
+        font-size: 1em;
+    }
+}
+
+@media (max-width: 480px) {
+    header, footer {
+        padding: 1rem 0;
+    }
+
+    h1 {
+        font-size: 1.5em;
+    }
+
+    h2 {
+        font-size: 1.3em;
+    }
+
+    .book-form form {
+        gap: 10px;
+    }
+
+    .book-form input[type="text"],
+    .book-form button[type="submit"] {
+        font-size: 0.9em;
+        padding: 10px;
+    }
+
+    .book-list table, .book-list thead, .book-list tbody, .book-list th, .book-list td, .book-list tr {
+        display: block;
+    }
+
+    .book-list thead tr {
+        position: absolute;
+        top: -9999px;
+        left: -9999px;
+    }
+
+    .book-list tr {
+        margin-bottom: 15px;
+        border: 1px solid #e0e6ed;
+        border-radius: 8px;
+        box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+        overflow: hidden;
+    }
+
+    .book-list td {
+        border: none;
+        border-bottom: 1px solid #e0e6ed;
+        position: relative;
+        padding-left: 50%;
+        text-align: right;
+    }
+
+    .book-list td:before {
+        position: absolute;
+        top: 0;
+        left: 6px;
+        width: 45%;
+        padding-right: 10px;
+        white-space: nowrap;
+        text-align: left;
+        font-weight: 600;
+        content: attr(data-label);
+        color: #555;
+    }
+
+    .book-list td:first-of-type {
+        border-top-left-radius: 8px;
+        border-top-right-radius: 8px;
+    }
+    .book-list td:last-of-type {
+        border-bottom-left-radius: 8px;
+        border-bottom-right-radius: 8px;
+        border-bottom: none;
+    }
+
+    .book-list td:nth-of-type(1):before { content: "Title:"; }
+    .book-list td:nth-of-type(2):before { content: "Author:"; }
+    .book-list td:nth-of-type(3):before { content: "ISBN:"; }
+    .book-list td:nth-of-type(4):before { content: "Actions:"; }
+
+    .book-list .actions {
+        text-align: right;
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+}
