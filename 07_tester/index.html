@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Test App</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="header">
+        <h1>Welcome to My App</h1>
+        <nav class="nav">
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Added alt attribute for accessibility and SEO -->
+        <img src="logo.png" alt="Company Logo">
+
+        <!-- Inline styles removed and moved to style.css for better separation of concerns and maintainability -->
+        <div class="info-box">
+            This is a test div
+        </div>
+
+        <form aria-labelledby="login-heading">
+            <h2 id="login-heading">Login</h2>
+            <div>
+                <!-- Added labels for improved accessibility -->
+                <label for="username">Username:</label>
+                <input type="text" id="username" name="username" required>
+            </div>
+            <div>
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" required>
+            </div>
+            <button type="submit">Login</button>
+        </form>
+
+        <div id="message"></div> <!-- Added for displayMessage function -->
+    </main>
+
+    <script src="app.js"></script>
+    <script src="utils.js"></script>
+</body>
+</html>
