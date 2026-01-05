@@ -37,7 +37,6 @@
 
 
 ## Lecture 03 : Maintaining History in Chatbots
-🌟[X Post](https://x.com/gauravkmaurya09/status/1998224861864867072?s=20)
 
 - history array to maintain the conversation
 - config
@@ -45,7 +44,6 @@
 - readlineSync for taking input from user in terminal
 
 ## Lecture 04 : Introduction to Tools in Generative AI
-🌟[X Post](https://x.com/gauravkmaurya09/status/1998806227934860800?s=20)
 
 - what are tools ?
 - why tools are required ?
@@ -57,7 +55,6 @@
     - model generate final response
 
 ## Lecture 05 : Calling External Tools / APIs in Generative AI
-🌟[X Post](https://x.com/gauravkmaurya09/status/1999114862642049280?s=20)
 - Create function => tools
 - execute tool based on model's decision
 - maintain history with tool usage
@@ -66,7 +63,7 @@
 ## Lecture 06 :
 ## Lecture 07 :
 ## Lecture 08 : What is Vector
-🌟[X Post](https://x.com/gauravkmaurya09/status/1999114862642049280?s=20)
+🌟[X Post](https://x.com/gauravkmaurya09/status/2008245829874954350?s=20)
 - The Problem
     - Computers match letters, not meaning.
 - Possible Solution
