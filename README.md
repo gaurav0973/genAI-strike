@@ -63,3 +63,22 @@
 - maintain history with tool usage
 
 
+## Lecture 06 :
+## Lecture 07 :
+## Lecture 08 : What is Vector
+🌟[X Post](https://x.com/gauravkmaurya09/status/1999114862642049280?s=20)
+- The Problem
+    - Computers match letters, not meaning.
+- Possible Solution
+    - make categories
+    - graphs with weights = matrix => analyse that matrix
+    - Assign numbers to words and then find closeness
+    - Vectors 
+- Semantic Meaning => meaning of words/sentences based on context
+- Vector => List of numbers representing semantic meaning
+- Vector Embedding => process of translating that 'Semantic Meaning' into a 'Vector' in such a way that similar meanings end up with similar numbers.
+- Who vectors are generated ?
+    - Neural Networks
+
+
+
