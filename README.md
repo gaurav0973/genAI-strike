@@ -76,6 +76,24 @@
 - Vector Embedding => process of translating that 'Semantic Meaning' into a 'Vector' in such a way that similar meanings end up with similar numbers.
 - Who vectors are generated ?
     - Neural Networks
+        - input : text
+        - output : vector
 
-
+## Lecture 09 : More about Vectors and Vector Databases
+🌟[X Post](https://x.com/gauravkmaurya09/status/2009082046924863483?s=20)
+- Distance Metrics
+    - Euclidean Distance
+        - distance increases => similarity decreases
+        - not good for high dimensional/magnitude data
+    - Cosine Similarity
+        - widely used now a days
+        - we talk of direction rather than magnitude
+        - normalizes the vectors => magnitude = 1
+        - Examples
+            - Text Search
+            - Recommendation Systems
+            - RAG applications
+- Why do we need Vector Database ?
+    - SQL/NoSQL finds exact matches
+    - Vector DB finds similar/semantic matches
 
