@@ -80,7 +80,7 @@
         - output : vector
 
 ## Lecture 09 : More about Vectors and Vector Databases
-🌟[X Post](https://x.com/gauravkmaurya09/status/2009082046924863483?s=20)
+🌟[X Post](https://x.com/gauravkmaurya09/status/2008504663679902165?s=20)
 - Distance Metrics
     - Euclidean Distance
         - distance increases => similarity decreases
@@ -98,7 +98,7 @@
     - Vector DB finds similar/semantic matches
 
 ## Lecture 10 : Search algorithm in Vector Database
-🌟[X Post](https://x.com/gauravkmaurya09/status/2010034867892049921?s=20)
+🌟[X Post](https://x.com/gauravkmaurya09/status/2009157492601966617?s=20)
 - ANN Algorithms
     - Approximate Nearest Neighbor Algorithms
     - find the data points that are closest to a given query point but not 
