@@ -97,3 +97,38 @@
     - SQL/NoSQL finds exact matches
     - Vector DB finds similar/semantic matches
 
+## Lecture 10 : Search algorithm in Vector Database
+🌟[X Post](https://x.com/gauravkmaurya09/status/2010034867892049921?s=20)
+- ANN Algorithms
+    - Approximate Nearest Neighbor Algorithms
+    - find the data points that are closest to a given query point but not 
+    necessarily the exact closest ones.
+- Approach
+    1.  Clustering/Inverted File Index-IVF => 
+        - k-means clustering
+        - new query vector is compared to centroids of the clusters
+        - only vectors in the closest clusters are searched
+        Pros
+            - faster search times
+            - reduced computational load
+        Cons
+            - may miss the absolute nearest neighbor
+            - Training Cost 
+            - Only read but can't write new data points easily
+            - Quality Depends on K
+    2. The Decision Tree Method (Binary Space Partitioning) => spotify used this earlier 
+        - space is recursively divided into two halves using hyperplanes
+        - new query vector traverses the tree to find the closest leaf node
+        Pros
+            - faster search times
+            - reduced computational load
+        Cons
+            - may miss the absolute nearest neighbor
+            - Tree Balancing Issues
+            - Only read but can't write new data points easily
+    3. HNSW (Hierarchical Navigable Small World Graphs) => used now a days
+        - multi-layered graph structure
+        - new query vector starts at the top layer and navigates down to find nearest neighbors
+        - [Read more](https://towardsdatascience.com/similarity-search-part-4-hierarchical-navigable-small-world-hnsw-2aad4fe87d37/)
+        - Features 
+            - searching/inserting/deleting => O(log(N))
